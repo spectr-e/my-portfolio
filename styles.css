@@ -15,7 +15,7 @@ nav {
   background: cyan;
   font-weight: 500;
 }
-main {
+header {
   margin: 0 32px;
 }
 ol {
@@ -29,4 +29,7 @@ a {
   text-decoration: none;
   letter-spacing: 0.5px;
   font-size: 18px;
+}
+p {
+    
 }
