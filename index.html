@@ -4,21 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nganga, Kamau</title>
+    <title>Josiah Nganga</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <script src="./app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/498214ab07.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <img src="" alt="" />
-      <ol>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ol>
-    </nav>
     <header>
+      <div class="container">
+        <nav>
+          <img src="./assets/logo.png" alt="logo" class="logo" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header_text">
+          <p>Software Engineer</p>
+          <h1>Welcome, I am <span>Josiah</span> <br />from Kenya.</h1>
+        </div>
+      </div>
     </header>
+    <main>
+      <!-- -----------------about----------------- -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about_column_1">
+              <img src="./assets/user.png" alt="about_img" />
+            </div>
+            <div class="about_column_2">
+              <h1 class="sub_title">About Me</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolorem amet itaque vel at. Ullam, distinctio sit. Libero animi,
+                nisi odit architecto, quisquam explicabo quis nulla laborum
+                ipsam ab dolorum mollitia.
+              </p>
+
+              <div class="tab_titles">
+                <p class="tab_links active_link" onclick="openTab('skills')">
+                  Skills
+                </p>
+                <p class="tab_links" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <p class="tab_links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab_contents active_tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Front-End</span><br />Designing Web & App interfaces.
+                  </li>
+                  <li><span>Back-End</span><br />Web & App development.</li>
+                  <li>
+                    <span>Full-Stack</span><br />Deploying a fully functional
+                    Web platform.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab_contents" id="experience">
+                <ul>
+                  <li><span>2022 - Now</span><br />Tech lead at Microsoft.</li>
+                  <li>
+                    <span>2020 - 2022</span><br />Blockchain Developer at Mara
+                    Foundation.
+                  </li>
+                  <li>
+                    <span>2019 - 2020</span><br />Technical Mentor at Moringa
+                    School.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab_contents" id="education">
+                <ul>
+                  <li>
+                    <span>2019</span><br />Certificate in Software Engineering
+                    at Moringa School.
+                  </li>
+                  <li>
+                    <span>2018</span><br />Bachelor in Commerce at University of
+                    Nairobi.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --------------services------------------>
+      <section id="services">
+        <div class="container">
+          <h1 class="sub_title">My Services</h1>
+          <div class="services_list">
+            <div>
+              <i class="fa-brands fa-html5"></i>
+              <h2>Front-End</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                pariatur molestiae officia aliquam ipsum iure rem perferendis
+                incidunt porro numquam quae, cumque magni error culpa ex quis
+                magnam non. A!
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-database"></i>
+              <h2>Back-End</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                pariatur molestiae officia aliquam ipsum iure rem perferendis
+                incidunt porro numquam quae, cumque magni error culpa ex quis
+                magnam non. A!
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                pariatur molestiae officia aliquam ipsum iure rem perferendis
+                incidunt porro numquam quae, cumque magni error culpa ex quis
+                magnam non. A!
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact_left">
+              <h1 class="sub_title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>devs.josia@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> +254 700 577951</p>
+              <div class="social_icons">
+                <a href="https://twitter.com/kamaujosia"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://instagram.com/kamaujosia"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://linkedin.com/in/kamaujosia"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+              <a href="./assets/resume.pdf" download class="btn btn_2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact_right">
+              <form action="">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  placeholder="Your Message"
+                  rows="6"
+                ></textarea>
+                <button type="submit" class="btn btn_2">Connect</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Josiah 2022</p>
+      </footer>
+    </main>
   </body>
 </html>
